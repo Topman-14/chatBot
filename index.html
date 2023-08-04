@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Topman's ChatBot Page</h1>
+        <hr>
+    </header>
+    <div id="chat_btn" class="hover">
+        <span class="material-symbols-outlined">chat</span>
+    </div>
+    <div id="chat_panel">
+        <div class="title_bar">
+            <span class="material-symbols-outlined">smart_toy</span> <h2> ChatBot</h2>
+        </div>
+        <hr>
+        <div id="chat_area">
+            <div class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Agba🙌, How far na?</p>
+            </div>
+            <div class="chat outgoing">
+                <span>You</span>
+                <p>Omo, I just dey</p>
+            </div>
+            <div id="chat_input">
+                <textarea placeholder="Talk your mind..." id="chat_text_content"></textarea>
+                <span class="material-symbols-outlined">send</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
 </body>
 </html>
