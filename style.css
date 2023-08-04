@@ -107,6 +107,9 @@ header > h1{
     border-bottom-left-radius: 0px;
     white-space: pre-wrap;
 }
+.loader{
+    background: #88888800 !important;
+}
 .chat_wrapper{
     margin: 0 10px 8px 0;
     font-weight: 300;
