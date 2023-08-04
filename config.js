@@ -1,3 +1,3 @@
-const APP_ID = "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";
+const API_KEY = "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";
 
-export default APP_ID;
+export default API_KEY;
