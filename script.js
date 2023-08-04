@@ -65,11 +65,9 @@ function getResponse() {
     }
 
     fetch(API_URL, requestOptions).then(r => r.json()).then(data =>{
-        console.log(data);
         addNewChatBox(data.choices[0].message.content, "incoming");
         document.querySelector('#preloader').remove();
-    }).catch((err)=>{
-        console.log(err);
+    }).catch(()=>{
         addNewChatBox("Omo!, this network is not networking. Try again later.", "incoming");
     }).finally(()=> chatArea.scrollTo(0, chatArea.scrollHeight));
 }
